@@ -7,44 +7,61 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Ingresa nombre"
-        android:id="@+id/txtNombre"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa nombre          "
+            android:id="@+id/txtNombre"/>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Ingresa nombre"
-        android:id="@+id/txtEmail"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa telefono        "
+            android:id="@+id/txtTelefono"/>
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa email           "
+            android:id="@+id/txtEmail"/>
 
-    <Button
-        android:id="@+id/btnI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa fecha nacimiento"
+            android:id="@+id/txtFecha"/>
 
-        android:onClick="btnI_click"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="4dp"
-        android:text="Insertar"
-        />
+        <Button
+            android:id="@+id/btnI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-    <Button
-        android:id="@+id/btnCargar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="btnCargar_click"
-        android:text="Cargar datos"
-         />
+            android:onClick="btnI_click"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Insertar"
+            />
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/lsv"
-        >
+        <Button
+            android:id="@+id/btnCargar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnCargar_click"
+            android:text="Cargar datos"
+            />
 
-    </ListView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa buscar"
+            android:id="@+id/txtBuscar"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lsv"
+            >
+
+        </ListView>
 
 </LinearLayout>

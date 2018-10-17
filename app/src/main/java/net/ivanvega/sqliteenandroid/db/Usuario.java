@@ -1,7 +1,6 @@
 package net.ivanvega.sqliteenandroid.db;
 
 public class Usuario {
-     int id;
 
     public int getId() {
         return id;
@@ -35,26 +34,6 @@ public class Usuario {
         this.email = email;
     }
 
-    String nombre;
-     String telefono;
-     String email;
-
-
-    public Usuario(int id, String nombre, String telefono, String email) {
-        this.id = id;
-        this.nombre = nombre;
-        this.telefono = telefono;
-        this.email = email;
-    }
-
-    public Usuario(int id, String nombre, String telefono, String email, String red_social) {
-        this.id = id;
-        this.nombre = nombre;
-        this.telefono = telefono;
-        this.email = email;
-        this.red_social = red_social;
-    }
-
     public String getRed_social() {
         return red_social;
     }
@@ -63,5 +42,27 @@ public class Usuario {
         this.red_social = red_social;
     }
 
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    int id;
+    String nombre;
+    String telefono;
+    String email;
     String red_social;
+    String fecha;
+
+    public Usuario(int id, String nombre, String telefono, String email, String red_social, String fecha) {
+        this.id = id;
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.email = email;
+        this.red_social = red_social;
+        this.fecha = fecha;
+    }
 }
